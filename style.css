@@ -1,0 +1,39 @@
+#navBar {
+    background-color: red;
+
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+#introduction {
+    background-image: url(./images/backgroundHome.jpg);
+    background-size: cover;
+    background-position: center;
+}
+#introduction, #featured {
+    margin-top: 20px;
+}
+
+#mission{
+    background-color: red;
+}
+
+#cat2{
+    width: 300px;
+    height: 169px;
+}
+
+#cat1{
+    width: 350px;
+    height: 197px;
+}
+#res1{
+    width: 300px;
+    height: 197px;
+}
+
+#res2{
+    width: 300px;
+    height: 197px;
+}

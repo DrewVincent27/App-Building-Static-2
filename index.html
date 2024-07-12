@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="./style.css" />
+    <title>App Building 2</title>
+    
+</head>
+<body>
+    <nav class="navbar navbar-expand-sm navbar-dark" id="navBar">
+        <div class="container">
+        
+        <!-- mb-0 to remove the margin at the bottom
+        h1 to get a bold color -->
+        <a 
+        href="#" 
+        class="navbar-brand mb-0 h1">
+        <!-- d-inline-block makes it an inline block
+         align-top makes sure that the alignment is on the top of the section -->
+        <img 
+        class="d-inline-block align-top"
+        src="./images/drew.png"
+        width="40"
+        height="30" />
+            Coding Hero
+        </a>
+        <!-- Hamburger button -->
+        <button
+        type="button" 
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNav"
+        class="navbar-toggler"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+        >
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- Hamburger button end -->
+        <!-- START OF NAVBAR ITEMS -->
+        <!-- will form a little later that this tag here willhave a responsive design to cause the navbar responsiveness  -->
+        <div 
+        class="collapse navbar-collapse" 
+        id="navbarNav">
+        <ul class="navbar-nav">
+            <li class="nav-item active">
+                <!-- active here makes the targeted nav item to be active and blacker than the rest -->
+                 <!-- disable is the counterpart of active -->
+                <a href="#home" class="nav-link active">
+                    Home
+                </a>
+            </li>
+            <li class="nav-item active">
+                <a href="#categories-section" class="nav-link">
+                    Categories
+                </a>
+            </li>
+            <li class="nav-item active">
+                <a href="#about" class="nav-link">
+                    About
+                </a>
+            </li>
+        </ul>
+        <!-- ms-auto puts it  -->
+        <form action="" class="d-flex ms-auto">
+            <input type="text" class="form-control me-2">
+            <button type="submit" class="btn btn-dark ">Search</button>
+         </form>
+    </div>
+    <!-- END OF NAVBAR ITEMS -->
+
+</div>
+    </nav>
+
+    <section id="home">
+        
+            <section id="introduction" class="p-4 my-2 bg-light rounded-3 text-dark">
+            <div class="row">
+            <div class="col-md-12 col-lg-6 pt-5 text-dark">
+            <h1 class="fw-bold">Welcome to Coding Hero! Coding Tutorials</h1>
+            <p class="lead">No matter where you are in your coding journey, our tutorials are here to guide you every step of the way. Dive in, start coding, and watch your skills grow. Let's make coding fun and accessible for everyone!</p>
+                </div>
+            </div>
+            </section>
+        
+        <section id="featured" class="text-white bg-dark">
+            <h1 class="text-center fw-bold">Featured Content</h1>
+            <p class="text-center">Here we showcase some of our most popular and important coding tutorials:</p>
+            <div class="row justify-content-around flex-md-row-reverse" id="other-projects">
+
+                <!-- HTML Card Start -->
+                <div class="col-md-3 text-center" id="html">
+                    <img class="img-fluid" src="./images/html-card.png">
+                    <h5>HTML</h5>
+                    <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+                <!-- HTML Card End -->
+
+                <!-- Bootstrap Card Start -->
+                <div class="col-md-3 text-center" id="bootstrap">
+                    <img class="img-fluid" src="./images/bootstrap-card.png">
+                    <h5>Bootstrap</h5>
+                    <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+                <!-- Bootstrap Card End -->
+
+                <!-- Nose JS Server Card Start -->
+                <div class="col-md-3 text-center" id="nodejs">
+                    <img class="img-fluid" src="./images/nodejs-card.png">
+                    <h5>Node JS Server</h5>
+                    <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+                <!-- Node JS Server Card End -->
+
+            </div>
+        </section>
+    </section>
+
+
+
+    <section id="categories-section" class="container-fluid py-5 text-center">
+        <div class="row">
+        <section id="categories" class="col-md-12 col-lg-6 pt-5 text-dark">
+            <div class="row justify-content-around flex-md-row-reverse" id="categories-items">
+            <h1>Category Listings</h1>
+            <p>Start your coding journey here! Learn the basics of programming, understand fundamental concepts, and write your first lines of code. No prior experience needed.</p>
+            <div class="col-lg-3 text-center" id="cat1">
+                <img class="img-fluid" src="./images/Top-10-Coding-Projects-For-Beginners.png" width="100%" height="100%">
+                <h5>Beginner</h5>
+            </div>
+            <div class="col-lg-3 text-center" id="cat2">
+                <img class="img-fluid" src="./images/images.jpeg" width="100%" height="100%">
+                <h5>Intermediate</h5>
+            </div>
+            </div>
+        </section>
+        <section id="resources" class="col-md-12 col-lg-6 pt-5 text-dark">
+            <div class="row justify-content-around flex-md-row-reverse" id="categories-items">
+            
+            <h2>Sample Resources</h2>
+            <p>Here we showcase some of our most popular and important content.</p>
+            <div class="col-lg-3 text-center" id="res1">
+                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/ly36kn0ug4k?si=Ds_NXQ-yPCHJPAgq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <div class="col-lg-3 text-center" id="res2">
+                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/WR1ydijTx5E?si=Prkf-JWivpUkyfy4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            </div>
+        </section>
+    </div>
+    </section>
+
+
+    <section id="about" class="container-fluid py-5 text-center">
+        <div class="row">
+        <div id="mission" class="col-md-12 col-lg-6 pt-5 text-white">
+            <h1 class="fw-bold">Mission Statement</h1>
+            <p>At Coding Hero, our mission is to empower individuals of all backgrounds and skill levels to master the art of coding through engaging, accessible, and high-quality tutorials. We are dedicated to fostering a learning environment that promotes creativity, problem-solving, and innovation. Our goal is to demystify technology, inspire lifelong learning, and contribute to the growth of a diverse and inclusive tech community. By providing comprehensive resources and personalized support, we aim to help our learners achieve their coding dreams and make meaningful contributions to the digital world.</p>
+        </div>
+
+        <div id="contact" class="col-md-12 col-lg-6 justify-content-center pt-1 text-white bg-dark">
+                <div  id="contact-form">
+                    <h1 class="mt-5 pt-5 px-5 fw-bold" id="contact-h4">Let's work together!</h1>
+                    <form id="form-col" class="px-5 pb-5">
+                        <div class="mb-3">
+                          <h5><strong>Email:</strong>drantodrew30@gmail.com</h5>
+                        </div>
+                        <div class="mb-3">
+                            <h5><strong>Phone:</strong>+639654697633</h5>
+                        </div>
+                        <div class="mb-3">
+                            <h5><strong>Address:</strong>Coding Street, Quezon City</h5>
+                        </div>
+                        <div class="text-right">
+                            <button type="button" class="btn mt-3">Submit</button>
+                        </div>
+                    </form>
+                </div>
+            
+        </div>
+        </div>
+    </section>
+    
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Javascript link -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
